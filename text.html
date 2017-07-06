@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap\css\bootstrap.css">
+	<script type="text/javascript" src="bootstrap\js\bootstrap.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<div style="width: 100%;background: #4c4cff;border-bottom-left-radius: 10px;border-bottom-right-radius:10px;
+	padding: 0px 40px;" ng-app="Navbar">
+		<navbar class="navbar">
+			<span ng-controller="bi" ng-bind="title"></span>
+			<ul style="float: right;">
+				<li style="display: inline-block;padding: 0px 10px;"><a href="">Contact Us</a></li>
+				<li style="display: inline-block;padding: 0px 10px;">Sign Up</li>
+				<li style="display: inline-block;padding: 0px 10px;">Sign In</li>
+			</ul>
+		</navbar>
+	</div>
+
+	<center id="Content" ng-app="Content">
+		<div class="start">
+			<div ng-controller="start" class="third" style="background: inherit;" ng-click="init";>
+				<div ng-repeat='x in list.data' ng-controller="data" ng-init='init(x)'></div>
+				<button type="submit" ng-click="addList()">Add List</button>
+			</div>
+			<button class="button" onclick="EditingMode();" id="editor">Edit</button>
+		</div>
+	</center>
+
+	<script type="text/javascript" src="home.js"></script>
+	<script type="text/javascript" src="angularApp.js"></script>
+
+</body>
+</html>

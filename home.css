@@ -1,0 +1,80 @@
+*{
+	margin: 0px;
+	font-size: 20px; 
+	font-variant: small-caps;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.start{
+	width: 750px;
+}
+.list{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	padding: 7px 10px;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-left-width: 5px;
+	text-align: left;
+}
+.first{
+	border-color: #ff6666;
+	background: #ff6666;
+	width: inherit;
+}
+.first:hover{
+	border-color: red;
+}
+.second{
+	border-color: lightgreen;
+	background: lightgreen;
+}
+.second:hover{
+	border-color: green;
+}
+.third{
+	border-color: lightblue;
+	background: lightblue;
+}
+.third:hover{
+	border-color: blue;
+}
+.heading{
+	text-align: center;
+	word-break: break-all;
+}
+.glyphs-data{
+	padding: 2px;
+}
+.data{
+	display: table;
+	width: 100%;
+	max-width: inherit;
+}
+.glyphs{
+	display: table-cell;
+	width: 30px;
+	padding: 5px;
+}
+.text{
+	display: table-cell;
+	width: 100%;
+	word-break: break-all;
+}
+.input{
+	display: none;
+	width: 100%;
+	border-radius: 5px;
+	vertical-align: bottom;
+	background: inherit;
+}
+.save , .doNotSave ,.edit , .addData, .addList, .delete{
+	display: none;
+}
+#editor{
+	width: 100%;
+	border-radius: 5px;
+}
